@@ -1,0 +1,1494 @@
+/*ESTILS GENÈRICS TOTA LA WEB*/
+
+html{
+font-family: 'Noto Serif', serif;
+font-family: 'Open Sans', sans-serif;
+background-color: #e8e8e8;
+
+}
+
+
+/*CAPÇALERA GENÈRICA PER TOTES LES PÀGINES AMB MOBILE FIRST*/
+
+
+
+.contenidor_logo{
+
+text-align: center;
+margin-top: 20px;
+margin-bottom: 70px;
+width: 100%;
+
+	
+}
+
+.sessió{
+
+	background-color: #9b1700;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	border-color: #9b1700;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.botó{
+
+text-align: center;	
+
+}
+
+.logo_complet{
+
+	margin-top: 10px;
+
+}
+
+.logo_complet h1,img{
+
+
+display: inline-block;
+vertical-align: middle;
+color: solid black:;
+font-family: 'Noto Serif';
+
+}
+
+.logo_complet span{
+
+	color: #9b1700;
+	font-weight: lighter;
+	font-style: italic;
+
+}
+
+nav ul li a{
+	color: #1c1c1c;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	font-weight: bolder;
+	text-decoration: none;
+	display: block;
+	padding-bottom: 10px;
+
+}
+
+nav ul li a:hover {
+
+	font-style: italic;
+	font-weight: bolder;
+	background-color: rgb(28, 28, 28);
+	color:white;
+	align-content: center;
+}
+
+ul{
+	list-style-type: none;
+	}
+
+.active{
+
+	background-color: grey;
+	width: auto;
+
+}
+
+
+/*CAPÇALERA GENÈRICA PER TOTES LES PÀGINES PER DISPOSITIUS GRANS*/
+
+@media screen and (min-width: 768px)
+
+{
+
+.contenidor_logo{
+
+display:  inline-grid; /* fa que els elements es comportin com una quadricula*/
+grid-template-columns: auto auto auto; /*l'element té 3 columnes i totes mateixa amplada */
+align-items: center;
+justify-content: center; /* CENTRA ELEMENTS AL MIG DE LA PÀGINA*/
+margin-top: 20px;
+margin-bottom: 70px;
+width: 100%;
+
+
+}
+
+.sessió{
+
+	background-color: #9b1700;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+	border-color: #9b1700;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.botó{
+
+text-align: center;
+order: 3; /*POSA EL BOTÓ EN TERCER LLOC A LA CAPÇALERA */
+margin-left: 300px;	
+
+}
+
+.logo_complet{
+
+	margin-right: 300px;
+}
+
+.logo_complet img{
+
+	height: 40px;
+	width: auto;
+}
+
+.logo_complet h1{
+
+	font-size: 15px;
+}
+
+.logo_complet h1,img{
+
+
+display: inline-block;
+vertical-align: middle;
+color: solid black:;
+font-family: 'Noto Serif';
+order: 1; /*POSA EL LOGO EN PRIMER LLOC A LA CAPÇALERA */
+
+
+}
+
+.logo_complet span{
+
+	color: #9b1700;
+	font-weight: lighter;
+	font-style: italic;
+
+}
+
+nav li {
+
+	display: inline-block;
+	margin-right: 20px;
+	order: 2; /*POSA EL NAVEGADOR EN SEGON LLOC A LA CAPÇALERA */
+}
+
+nav ul li a{
+	color: #1c1c1c;
+	font-family: 'Open Sans';
+	font-size: 10px;
+	font-weight: bolder;
+	text-decoration: none;
+	padding-bottom: 10px;
+
+}
+
+nav ul li a:hover {
+
+	font-style: italic;
+	font-weight: bolder;
+	background-color: rgb(28, 28, 28);
+	color:white;
+	align-content: center;
+}
+
+ul{
+	list-style-type: none;
+	}
+
+.active{
+
+	background-color: grey;
+	width: auto;
+
+}
+
+}
+
+/* PEU DE PÀGINA PER MOBILE FIRST*/
+
+.peu_pàgina{
+
+	background-color: #433A44;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 5px;
+	text-align: center;
+	margin-top: 100px;
+
+}
+
+.peu_pàgina .info_legal{
+	padding-top: 25px;
+}
+
+.peu_pàgina .info_legal h1{
+	font-size: 8px;
+	font-weight: lighter;
+}
+
+.peu_pàgina .xarxes{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.peu_pàgina .xarxes h1{
+	font-size: 8px;
+	font-weight: lighter;
+}
+
+.peu_pàgina .dades_alumne{
+
+	padding-bottom: 25px;
+}
+
+.peu_pàgina .dades_alumne h1{
+
+	font-size: 8px;
+	font-weight: lighter;
+
+}
+
+/* PEU DE PÀGINA PER DISPOSITIUS GRANS*/
+
+@media screen and (min-width: 768px)
+
+{
+
+
+
+.peu_pàgina{
+
+	display:  grid; /* fa que els elements es comportin com una quadricula*/
+	grid-template-columns: 1fr 2.5fr 1fr; /* determina número de columnes de la quadricula*/
+	grid-template-rows: 0.5fr 0.5fr;
+	background-color: #433A44;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 9px;
+	width: 100%;
+
+}
+
+.info_legal{
+	
+	display: inline-grid;
+	padding-top: 25px;
+	grid-column: 1;
+	grid-row:1;
+	font-weight: lighter;
+	text-align: left;
+	
+
+	
+}
+
+
+
+.info_legal li{
+
+	display: inline-block;
+
+	
+	
+}
+
+.xarxes{
+	
+	display:inline-grid;
+	padding-top: 25px;
+	padding-right: 35px;
+	grid-column: 3;
+	grid-row: 1;
+	text-align: right;
+	
+}
+
+.xarxes li{
+	display: inline-grid;
+	
+}
+
+
+
+.dades_alumne{
+
+	display: grid;
+	grid-column: 1;
+	grid-row: 2;
+	text-align: left;
+	padding-left: 35px;
+	line-height: 8px;
+
+	
+}
+
+}
+
+/* INDEX AMB MOBILE FIRST*/
+
+.secció1{
+
+	text-align: center;
+	margin-bottom: 70px;
+	display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.secció1 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+
+}
+
+.secció1 p{
+
+	font-family: 'Noto Serif';
+	font-size: 12px;
+	color: #1c1c1c;
+
+}
+
+.secció2{
+	text-align: center;
+	margin-bottom: 70px;
+	display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.secció2 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+}
+
+.secció2 img{
+
+	width: 200px;
+}
+
+.secció2 p{
+
+	font-family: 'Noto Serif';
+	font-size: 12px;
+	color: #1c1c1c;
+
+}
+
+.secció3{
+
+display: grid;
+align-items: center;
+justify-content: center;
+
+}
+
+.secció3 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+	text-align: center;
+}
+
+.secció3 p{
+
+	font-family: 'Noto Serif';
+	font-size: 12px;
+	color: #1c1c1c;
+	text-align: left;
+	line-height: 20px;
+}
+
+.secció3 form p{
+
+	font-family: 'Noto Serif';
+	font-size: 8px;
+	color: #1c1c1c;
+	line-height: 20px;
+
+}
+
+.secció3 form p span{
+
+	font-weight:bolder;
+}
+
+.secció3 .privacitat{
+
+	font-family: 'Noto Serif';
+	font-size: 6px;
+	color: #1c1c1c;
+	line-height: 20px;
+
+}
+
+input[type=text] {
+  border: 0.5px solid black;
+ 
+}
+
+input[type=password] {
+  border: 0.5px solid black;
+ 
+}
+
+input{
+	font-size: 19px;
+	
+}
+
+label{
+
+	color: #1c1c1c;
+	font-size: 10px;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 13px;
+}
+
+.privacitat label{
+
+	margin-left: 20px;
+	margin-top: -25px;
+	position: absolute;
+	font-size: 8px;
+}
+
+/*BOTÓ FORMULARI REGISTRE */
+
+.form{
+
+	background-color: #9b1700;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	border-radius: 5px;
+	border-color: #9b1700;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*ÍNDEX PER DISPOSITIUS GRANS*/
+
+@media screen and (min-width: 768px)
+
+{
+	.secció1{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.secció1 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+
+}
+
+.secció1 p{
+
+	font-family: 'Noto Serif';
+	font-size: 12px;
+	color: #1c1c1c;
+
+}
+
+.secció2{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+	grid-template-rows: 1fr 4fr;
+
+}
+
+.secció2 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+}
+
+.secció2 img{
+
+	max-width: 130px;
+	text-align: center;
+}
+
+.secció2 p{
+
+	font-family: 'Noto Serif';
+	font-size: 12px;
+	color: #1c1c1c;
+	text-align: center;
+
+}
+
+.titol{
+
+grid-column: 1/7;
+grid-row:1;
+
+}
+
+.registra{
+
+grid-column:2;
+grid-row:2;
+
+
+}
+
+.inscriu{
+
+grid-column:3;
+grid-row:2; 
+
+
+}
+
+.tria{
+
+grid-column:4;
+grid-row:2; 
+  
+
+}
+
+.gaudeix{
+
+grid-column:5;
+grid-row:2;
+  
+
+}
+
+
+.secció3{
+
+display: grid;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+grid-template-columns: 2fr 2fr 2fr 2fr;
+grid-template-rows: 0.5fr 1fr 3fr;
+
+}
+
+.secció3 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+	text-align: center;
+}
+
+.secció3 p{
+
+	font-family: 'Noto Serif';
+	font-size: 12px;
+	color: #1c1c1c;
+	text-align: left;
+	line-height: 20px;
+}
+
+.secció3 form p{
+
+	font-family: 'Noto Serif';
+	font-size: 8px;
+	color: #1c1c1c;
+	line-height: 20px;
+
+}
+
+.secció3 .text p{
+
+	font-size: 20px;
+	line-height: 28px;
+}
+
+.secció3 form p span{
+
+	font-weight:bolder;
+}
+
+.secció3 .privacitat{
+
+	font-family: 'Noto Serif';
+	font-size: 6px;
+	color: #1c1c1c;
+	line-height: 20px;
+
+}
+
+input[type=text] {
+  border: 0.5px solid black;
+ 
+}
+
+input[type=password] {
+  border: 0.5px solid black;
+ 
+}
+
+input{
+	font-size: 19px;
+	
+}
+
+label{
+
+	color: #1c1c1c;
+	font-size: 10px;
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 13px;
+}
+
+.privacitat label{
+
+	margin-left: 20px;
+	margin-top: -25px;
+	position: absolute;
+	font-size: 8px;
+}
+
+.uneix{
+
+	grid-column: 1/5;
+	grid-row: 1;
+}
+
+.text{
+
+	grid-column: 2;
+	grid-row: 2;
+
+}
+
+.formulari{
+
+	grid-column: 3;
+	grid-row: 2/4;
+	margin-top: -80px;
+}
+
+/*BOTÓ FORMULARI REGISTRE */
+
+.form{
+
+	background-color: #9b1700;
+	color: white;
+	padding: 5px 20px 5px 20px;
+	border-radius: 5px;
+	border-color: #9b1700;
+	font-family: 'Open Sans', sans-serif;
+}
+
+}
+
+/* CLUBS TEMÀTICS*/
+
+.nostres_clubs{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.nostres_clubs h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+}
+
+.nostres_clubs h2{
+
+	font-family: 'Noto Serif';
+	font-size: 20px;
+	color: #1c1c1c;
+	align-content: left;
+	margin-left: -80px;
+	text-align: left;
+}
+
+.nostres_clubs h2 span{
+
+	color: #9b1700;
+	font-weight: bolder;
+	font-size: 30px;
+	margin-left: 80px;
+	margin-right: 25px;
+}
+
+.nostres_clubs p{
+
+	font-family: 'Noto Serif';
+	font-size: 18px;
+	color: #1c1c1c;
+	align-content: left;
+	margin-left: 0px;
+	text-align: left;
+
+}
+
+.nostres_clubs h3{
+
+	font-family: 'Noto Serif';
+	font-size: 18px;
+	color: #9b1700;
+	align-content: left;
+	margin-left: -480px;
+
+}
+
+.nostres_clubs a{
+
+	text-decoration: none;
+}
+
+/* CLUBS TEMÀTICS PER DISPOSITIUS GRANS*/
+
+@media screen and (min-width: 768px)
+
+{
+
+.nostres_clubs{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 2fr;
+    grid-column-gap: 35px;
+    grid-row-gap: 15px;
+}
+
+.nostres_clubs h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+}
+
+.nostres_clubs h2{
+
+	font-family: 'Noto Serif';
+	font-size: 20px;
+	color: #1c1c1c;
+	align-content: left;
+	margin-left: -80px;
+	text-align: left;
+}
+
+.nostres_clubs h2 span{
+
+	color: #9b1700;
+	font-weight: bolder;
+	font-size: 30px;
+	margin-left: 80px;
+	margin-right: 25px;
+}
+
+.nostres_clubs p{
+
+	font-family: 'Noto Serif';
+	font-size: 18px;
+	color: #1c1c1c;
+	align-content: left;
+	margin-left: 0px;
+	text-align: left;
+
+}
+
+.nostres_clubs h3{
+
+	font-family: 'Noto Serif';
+	font-size: 18px;
+	color: #9b1700;
+	align-content: left;
+	margin-left: -480px;
+
+}
+
+.nostres_clubs img{
+
+
+}
+
+.nostres_clubs a{
+
+	text-decoration: none;
+}
+
+.titular{
+
+grid-column: 1/6;
+grid-row: 1;
+
+
+}
+
+.guardonats{
+
+	grid-column: 3;
+	grid-row: 2;
+	
+}
+
+.espai{
+
+	grid-column: 2;
+	grid-row: 2;
+	
+}
+
+.intriga{
+
+	grid-column: 4;
+	grid-row: 2;
+	
+}
+
+.època{
+
+	grid-column: 2;
+	grid-row: 3;
+	
+}
+
+.romàntics{
+
+	grid-column: 3;
+	grid-row: 3;
+	
+}
+
+.nacional{
+
+	grid-column: 4;
+	grid-row: 3;
+	
+}
+
+}
+
+/*SESSIONS 2020 MOBILE FIRST*/
+
+.sessions2020{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.sessions2020 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+
+}
+
+.sessions2020 h2{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+	text-align: left;
+
+}
+
+.sessions2020 a{
+
+	font-family: 'Noto Serif';
+	font-size: 20px;
+	color: #1c1c1c;
+	text-align: left;
+	font-weight: lighter;
+	line-height: 25px;
+	text-decoration: none;
+
+
+}
+
+.pelis_premiades h2{
+
+	font-family: 'Noto Serif';
+	font-size: 20px;
+	color: #1c1c1c;
+	align-content: left;
+	margin-left: -80px;
+	text-align: left;
+}
+
+.pelis_premiades h2 span{
+
+	color: #9b1700;
+	font-weight: bolder;
+	font-size: 30px;
+	margin-left: 80px;
+	margin-right: 25px;
+}
+
+.polaroid {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ margin-left: 100px;
+
+}
+
+.polaroid img{
+
+	width: 300px;
+}
+.container {
+  text-align: center;
+  color: #9b1700;
+  font-weight: bolder;
+  
+}
+
+/* SESSIONS 2020 PER DISPOSITIUS GRANS*/
+
+@media screen and (min-width: 768px)
+
+{
+
+.sessions2020{
+
+	text-align: center;
+	margin-bottom: 20px;
+    grid-template-columns: 0.1fr 1fr 2fr 2fr 2fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr 0.1fr 1fr; 
+}
+
+.sessions2020 .intro h1,p{
+
+	text-align: center;
+justify-content: center;
+
+	}
+
+	.sessions2020 .intro p{
+
+margin-bottom: 40px;
+align-items: center;
+justify-content: center;
+
+	}
+
+
+.sessions2020 h1{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+
+}
+
+.sessions2020 h2{
+
+	font-family: 'Noto Serif';
+	font-size: 23.5px;
+	color: #1c1c1c;
+	text-align: left;
+
+}
+
+
+
+.sessions_per_club  li{
+
+	font-family: 'Noto Serif';
+	font-size: 10px;
+	color: #1c1c1c;
+	text-align: left;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+.sessions_per_club  a{
+
+	font-family: 'Noto Serif';
+	font-size: 14px;
+	line-height: 19px;
+
+}
+
+.sessions2020 h3{
+
+	font-family: 'Noto Serif';
+	font-size: 20px;
+	color: #1c1c1c;
+	align-content: left;
+	text-align: left;
+}
+
+.sessions2020 h3 span{
+
+	color: #9b1700;
+	font-weight: bolder;
+	font-size: 30px;
+
+}
+
+.polaroid {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.polaroid img{
+
+	width: 300px;
+}
+.container {
+  text-align: center;
+  color: #9b1700;
+  font-weight: bolder;
+  
+}
+
+.intro{
+
+	grid-row: 1;
+	grid-column: 2/6;
+	border-bottom-style: dotted;
+	border-bottom-color: #9b1700;
+}
+
+.sessions_per_club{
+
+	grid-row: 2/4;
+	grid-column:2;
+	margin-top: -370px;
+}
+
+.guardonats{
+
+	grid-row: 2;
+	grid-column: 3;
+}
+
+.parasite{
+
+	grid-row: 3;
+	grid-column: 3;
+}
+
+.guerra{
+
+	grid-row: 3;
+	grid-column: 4;
+}
+
+.klaus{
+
+	grid-row: 3;
+	grid-column: 5;
+}
+
+.alespai{
+
+	grid-row: 4;
+	grid-column: 3;
+}
+
+.martian{
+
+	grid-row: 5;
+	grid-column: 3;
+}
+
+.interestellar{
+
+	grid-row: 5;
+	grid-column: 4;
+}
+
+.gravity{
+
+	grid-row: 5;
+	grid-column: 5;
+}
+
+.dosintriga{
+
+	grid-row: 6;
+	grid-column: 3;
+}
+
+.knives{
+
+	grid-row: 7;
+	grid-column: 3;
+}
+
+.inception{
+
+	grid-row: 7;
+	grid-column: 4;
+}
+.keeping{
+
+	grid-row: 7;
+	grid-column: 5;
+}
+
+.altraepoca{
+
+	grid-row: 8;
+	grid-column: 3;
+}
+
+.north{
+
+	grid-row: 9;
+	grid-column: 3;
+
+}
+
+.opera{
+
+	grid-row: 9;
+	grid-column: 4;
+}
+
+.casablanca{
+
+	grid-row: 9;
+	grid-column: 5;
+}
+
+.posemnosromantics{
+
+	grid-row: 10;
+	grid-column: 3;
+}
+
+.loveactually{
+
+	grid-row: 11;
+	grid-column: 3;
+}
+
+.princes{
+
+	grid-row: 11;
+	grid-column: 4;
+}
+
+.sabrina{
+
+	grid-row: 11;
+	grid-column: 5;
+}
+
+.cinenacional{
+
+	grid-row: 12;
+	grid-column: 3;
+}
+
+.brujas{
+
+	grid-row: 13;
+	grid-column: 3;
+}
+
+.negre{
+
+	grid-row: 13;
+	grid-column: 4;
+}
+
+.tapas{
+
+	grid-row: 13;
+	grid-column: 5;
+}
+
+
+
+/*KLAUS MOBILE FIRST*/
+
+.Klaus{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+    justify-content:center;
+    text-align: left;
+    font-family: 'Noto Serif', serif;
+}
+
+.Klaus h1{
+
+    font-family: 'Noto Serif', serif;
+	font-size: 23.5px;
+	color: #1c1c1c;
+
+}
+
+.Klaus h2{
+
+	font-family: 'Noto Serif', serif;
+	font-size: 20.5px;
+	color: #1c1c1c;
+	text-align: left;
+
+}
+
+.Klaus h3{
+
+	font-size: 16px;
+	font-weight: bolder;
+	border-bottom: 1px solid black;
+}
+
+.Klaus p{
+
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.Klaus p span{
+
+	font-weight: bolder;
+}
+
+.Klaus img{
+
+	shape-outside: circle( );
+	border-radius: 50%;
+	float: left;
+
+}
+
+.trailer h3{
+
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 16px;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+/* FIL ARIADNA PÀGINA KLAUS */
+
+.ariadna {
+
+	align-items: center;
+	text-align: center;
+}
+
+.ariadna ul li a{
+
+	font-family: 'Noto Serif', serif;
+	text-decoration: none;
+
+}
+
+.ariadna .active {
+
+	background-color: white;
+	color: grey;
+}
+
+.ariadna ul li a:visited {
+
+	text-decoration: none;
+
+}
+.ariadna ul li {
+
+
+	display: inline-block;
+
+}
+
+.ariadna .active {
+
+	background-color: white;
+	color: grey;
+
+}
+
+/*KLAUS DISPOSITIUS GRANS*/
+@media screen and (min-width: 768px)
+
+{
+
+.Klaus{
+
+	text-align: center;
+	margin-bottom: 20px;
+	display: grid;
+    justify-content:center;
+    text-align: left;
+    font-family: 'Noto Serif', serif;
+    grid-template-rows: 0.1fr 0.1fr 1fr 0.65fr 0.65fr;
+    grid-template-columns: 0.5fr 1.5fr 2fr 0.5fr; 
+}
+
+.Klaus h1{
+
+    font-family: 'Noto Serif', serif;
+	font-size: 23.5px;
+	color: #1c1c1c;
+
+}
+
+.Klaus h2{
+
+	font-family: 'Noto Serif', serif;
+	font-size: 20.5px;
+	color: #1c1c1c;
+	text-align: left;
+
+}
+
+.Klaus h3{
+
+	font-size: 16px;
+	font-weight: bolder;
+	border-bottom: 1px solid black;
+}
+
+.Klaus p{
+
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.Klaus p span{
+
+	font-weight: bolder;
+}
+
+.Klaus img{
+
+	shape-outside: circle( );
+	border-radius: 50%;
+	float: left;
+
+}
+
+.trailer h3{
+
+	font-weight: lighter;
+	font-style: italic;
+	font-size: 16px;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.klaustitol{
+
+	grid-row:2; 
+	grid-column:2;
+}
+
+.fitxa_tècnica{
+
+	grid-row:3/5; 
+	grid-column:2;
+}
+
+.sobreobra{
+
+	grid-row:3; 
+	grid-column:3;
+
+
+}
+
+.sergio{
+
+	grid-row:4; 
+	grid-column:3;
+}
+
+
+.trailer{
+
+	grid-row:5; 
+	grid-column:3;
+}
+
+.Klaus .sobreobra h2,p{
+
+	text-align: left;
+}
+
+.Klaus .sergio h2,p{
+
+	text-align: left;
+}
+
+
+/* FIL ARIADNA PÀGINA KLAUS DISPOSITIUS GRANS */
+
+.ariadna {
+
+	align-items: center;
+	text-align: center;
+	grid-row:1; 
+	grid-column:2;
+}
+
+.ariadna ul li a{
+
+	font-family: 'Noto Serif', serif;
+	text-decoration: none;
+
+}
+
+.ariadna .active {
+
+	background-color: white;
+	color: grey;
+}
+
+.ariadna ul li a:visited {
+
+	text-decoration: none;
+
+}
+.ariadna ul li {
+
+
+	display: inline-block;
+
+}
+
+.ariadna .active {
+
+	background-color: white;
+	color: grey;
+
+}
+
+}
